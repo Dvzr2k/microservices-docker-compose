@@ -9,7 +9,9 @@ services:
     restart: always
     networks:
       - currency-compose-network
-
+#docker run -d -p 8100:8100 
+#--env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange
+#--name=currency-conversion --network=currency-network dvzr032/microservice-currency-conversion:0.1.V
   currency-conversion:
     image: dvzr032/microservice-currency-conversion:0.1.V
     ports:
